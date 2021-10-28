@@ -1,0 +1,71 @@
+onesoil_table;onesoil_column;description_en;description_ru
+customers;customer_id;key to the orders dataset. Each order has a unique customer_id.;ключ к набору данных заказов. Каждый заказ имеет уникальный customer_id.
+customers;customer_unique_id;unique identifier of a customer.;уникальный идентификатор клиента.
+customers;customer_zip_code_prefix;first five digits of customer zip code;первые пять цифр почтового индекса клиента
+customers;customer_city;customer city name;название города клиента
+customers;customer_state;customer state;состояние клиента
+geolocation;geolocation_zip_code_prefix;first 5 digits of zip code;первые 5 цифр почтового индекса
+geolocation;geolocation_lat;latitude;широта
+geolocation;geolocation_lng;longitude;долгота
+geolocation;geolocation_city;city name;название города
+geolocation;geolocation_state;state;штат
+order_items;order_id;order unique identifier;уникальный идентификатор заказа
+order_items;order_item_id;sequential number identifying number of items included in the same order.;порядковой номер, обозначающий количество позиций, включенных в один и тот же заказ.
+order_items;product_id;product unique identifier;уникальный идентификатор продукта
+order_items;seller_id;seller unique identifier;уникальный идентификатор продавца
+order_items;shipping_limit_date;Shows the seller shipping limit date for handling the order over to the logistic partner.;Показывает дату ограничения доставки продавца для обработки заказа логистическим партнером.
+order_items;price;item price;цена товара
+order_items;freight_value;item freight value item (if an order has more than one item the freight value is splitted between items);товар стоимостью фрахта (если заказ имеет более одного товара, стоимость фрахта делится между позициями)
+order_payments;order_id;unique identifier of an order.;уникальный идентификатор заказа.
+order_payments;payment_sequential;a customer may pay an order with more than one payment method. If he does so, a sequence will be created to;клиент может оплатить заказ с помощью более чем одного способа оплаты. Если он это сделает, будет создана последовательность
+order_payments;payment_type;method of payment chosen by the customer.;способ оплаты, выбранный клиентом.
+order_payments;payment_installments;number of installments chosen by the customer.;количество выбранных клиентом рассрочок.
+order_payments;payment_value;transaction value.;стоимость сделки.
+order_reviews;review_id;unique review identifier;уникальный идентификатор рецензирования
+order_reviews;order_id;unique order identifier;уникальный идентификатор заказа
+order_reviews;review_score;Note ranging from 1 to 5 given by the customer on a satisfaction survey.;Примечание в диапазоне от 1 до 5, данное клиентом в опросе удовлетворенности.
+order_reviews;review_comment_title;Comment title from the review left by the customer, in Portuguese.;Заголовок комментария из отзыва, оставленного клиентом, на португальском языке.
+order_reviews;review_comment_message;Comment message from the review left by the customer, in Portuguese.;Комментарий к сообщению из отзыва, оставленного клиентом, на португальском языке.
+order_reviews;review_creation_date;Shows the date in which the satisfaction survey was sent to the customer.;Показывает дату, в которую опрос удовлетворенности был отправлен клиенту.
+order_reviews;review_answer_timestamp;Shows satisfaction survey answer timestamp.;Показывает метку времени ответа на опрос удовлетворенности.
+orders;order_id;unique identifier of the order.;уникальный идентификатор заказа.
+orders;customer_id;key to the customer dataset. Each order has a unique customer_id.;ключ к набору данных клиента. Каждый заказ имеет уникальный customer_id.
+orders;order_status;Reference to the order status (delivered, shipped, etc).;Ссылка на статус заказа (доставлен, отгружен и т.д.).
+orders;order_purchase_timestamp;Shows the purchase timestamp.;Показывает метку времени покупки.
+orders;order_approved_at;Shows the payment approval timestamp.;Показывает метку времени утверждения платежа.
+orders;order_delivered_carrier_date;Shows the order posting timestamp. When it was handled to the logistic partner.;Показывает метку времени отправки заказа. Когда это было обработано логистическим партнером.
+orders;order_delivered_customer_date;Shows the actual order delivery date to the customer.;Показывает фактическую дату доставки заказа клиенту.
+orders;order_estimated_delivery_date;Shows the estimated delivery date that was informed to customer at the purchase moment.;Показывает предполагаемую дату доставки, которая была сообщена клиенту в момент покупки.
+products;product_id;unique product identifier;уникальный идентификатор продукта
+products;product_category_name;root category of product, in Portuguese.;корневая категория продукта, на португальском языке.
+products;product_name_lenght;number of characters extracted from the product name.;количество символов, извлеченных из названия продукта.
+products;product_description_lenght;number of characters extracted from the product description.;количество символов, извлеченных из описания продукта.
+products;product_photos_qty;number of product published photos;количество опубликованных фотографий продукта
+products;product_weight_g;product weight measured in grams.;вес продукта измеряется в граммах.
+products;product_length_cm;product length measured in centimeters.;длина изделия измеряется в сантиметрах.
+products;product_height_cm;product height measured in centimeters.;высота изделия измеряется в сантиметрах.
+products;product_width_cm;product width measured in centimeters.;ширина изделия измеряется в сантиметрах.
+sellers;seller_id;seller unique identifier;уникальный идентификатор продавца
+sellers;seller_zip_code_prefix;first 5 digits of seller zip code;первые 5 цифр почтового индекса продавца
+sellers;seller_state;seller city name;название города продавца
+sellers;seller_city;seller state;состояние продавца
+product_category_name_translation;product_category_name;category name in Portuguese;название категории на португальском языке
+product_category_name_translation;product_category_name_english;category name in English;название категории на английском языке
+closed_deals;mql_id;Marketing Qualified Lead id;Маркетинговый квалифицированный идентификатор лида
+closed_deals;seller_id;Seller id;Идентификатор продавца
+closed_deals;sdr_id;Sales Development Representative id;Идентификатор представителя по развитию продаж
+closed_deals;sr_id;Sales Representative;Торговый представитель
+closed_deals;won_date;Date the deal was closed;Дата закрытия сделки
+closed_deals;business_segment;Lead business segment. Informed on contact.;Бизнес-сегмент лида. Проинформирован о контакте.
+closed_deals;lead_type;Lead type. Informed on contact.;Тип лида. Проинформирован о контакте.
+closed_deals;lead_behaviour_profile;Lead behaviour profile. SDR identify it on contact.;Профиль поведения лида. SDR идентифицируют его при контакте.
+closed_deals;has_company;Does the lead have a company (formal documentation)?;Есть ли у лида компания (официальная документация)?
+closed_deals;has_gtin;Does the lead have Global Trade Item Number (barcode) for his products?;Есть ли у лида глобальный номер торговой единицы (штрих-код) для его продуктов?
+closed_deals;average_stock;Lead declared average stock. Informed on contact.;Лид заявил средний запас. Проинформирован о контакте.
+closed_deals;business_type;Type of business (reseller/manufacturer etc.);Тип бизнеса (реселлер/производитель и т.д.)
+closed_deals;declared_product_catalog_size;Lead declared catalog size. Informed on contact.;Заявленный размер каталога лида. Проинформирован о контакте.
+closed_deals;declared_monthly_revenue;Lead declared estimated monthly revenue. Informed on contact.;Лид задекларировал предполагаемый ежемесячный доход. Проинформирован о контакте.
+marketing_qualified_leads;first_contact_date;Marketing Qualified Lead id;Маркетинговый квалифицированный идентификатор лида
+marketing_qualified_leads;origin;Date of the first contact solicitation.;Дата первого контакта.
+marketing_qualified_leads;mql_id;Landing page id where the lead was acquired;Идентификатор целевой страницы, на которой был получен лид
+marketing_qualified_leads;landing_page_id;Type of media where the lead was acquired;Тип медиа, на котором был приобретен лид
